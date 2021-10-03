@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinhnentoto">
+
+    <TableRow
+        android:id="@+id/tbrCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/vien">
+
+        <EditText
+            android:id="@+id/edtCheck"
+            android:layout_width="297dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:paddingTop="5dp"/>
+
+        <ImageButton
+            android:id="@+id/btCheck"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:textAlignment="center"
+            android:src="@drawable/checkin6"
+            android:textColor="#000000"
+            android:onClick="onClickControl"
+            android:scaleType="centerInside"
+            android:background="@drawable/vienbutton"/>
+
+    </TableRow>
+
+    <RelativeLayout
+        android:id="@+id/relatFlash"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbrCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:background="@drawable/vienanh"
+                android:paddingBottom="60dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="60dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hinhnentrang1" />
+
+            <TextView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgFront"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:background="@drawable/vienanh"
+            android:paddingBottom="60dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hinhnentoto" />
+
+        <TextView
+            android:id="@+id/tvNamePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFront"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="dsfs"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/relatFlash"
+        android:background="@drawable/vien"
+        android:layout_marginTop="3dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vien"
+            android:onClick="onClickControl"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrleft"
+            android:textAllCaps="false" />
+
+        <ImageButton
+            android:id="@+id/btNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/vien"
+            android:onClick="onClickControl"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrright"
+            android:textAllCaps="false" />
+
+        <ImageButton
+            android:id="@+id/btSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/vien"
+            android:onClick="onClickControl"
+            android:scaleType="fitXY"
+            android:src="@drawable/amthanh2"
+            android:textAllCaps="false" />
+
+    </TableRow>
+
+</RelativeLayout>

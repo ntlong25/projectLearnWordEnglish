@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Hide the card first-->
+    <objectAnimator
+        android:duration="1"
+        android:propertyName="alpha"
+        android:valueFrom="1.0"
+        android:valueTo="0.0" />
+
+    <!-- Rotate. -->
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="rotationY"
+        android:valueFrom="-180"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:valueTo="0" />
+    <!--android:interpolator="@android:interpolator/accelerate_decelerate"-->
+    <!-- When the roration reach half of animation, show the card -->
+    <objectAnimator
+        android:duration="1"
+        android:propertyName="alpha"
+        android:startOffset="250"
+        android:valueFrom="0.0"
+        android:valueTo="1.0" />
+</set>

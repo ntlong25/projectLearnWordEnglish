@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/tbrTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your title: "
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Title "
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbrAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbrTextTitle"
+        android:layout_marginTop="3dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the picture? "
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <RelativeLayout
+        android:id="@+id/relatFlash"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbrAsk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/vienanh"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hinhnentrang1" />
+
+            <TextView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgFront"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/vienanh"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hinhnentoto" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rltansswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relatFlash"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Choose your answer: "
+            android:textColor="#000"
+            android:textSize="17dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rgWord1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Trung cấp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Cao đẳng"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Trung cấp"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rgWord2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+            </RadioGroup>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vienbutton"
+                android:onClick="onCLickView"
+                android:text="Submit"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnIgnore"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onCLickView"
+                android:background="@drawable/vienbutton"
+                android:text=" Ignore"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnShowAnswer"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="onCLickView"
+                android:background="@drawable/vienbutton"
+                android:text=" Show answer"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvMeaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Meaning "
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rltansswer"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btPrevReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vien"
+            android:scaleType="fitXY"
+            android:onClick="onCLickView"
+            android:src="@drawable/arrleft"
+            android:textAllCaps="false" />
+
+        <ImageButton
+            android:id="@+id/btNextReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/vien"
+            android:onClick="onCLickView"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrright"
+            android:textAllCaps="false" />
+
+    </TableRow>
+
+</RelativeLayout>

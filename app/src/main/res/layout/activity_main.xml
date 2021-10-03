@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinhensau"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.doan5.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tbrLearning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLeaning"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vienbutton"
+                android:onClick="ChooseAction"
+                android:padding="5dp"
+                android:text="Learning"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbrReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbrLearning"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnReview"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vienbutton"
+                android:onClick="ChooseAction"
+                android:padding="5dp"
+                android:text="Review"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbrTesting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbrReview"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTesting"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vienbutton"
+                android:padding="5dp"
+                android:text="Testing"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbrDictionary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbrTesting"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDictionary"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vienbutton"
+                android:padding="5dp"
+                android:text="Dictionary"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbrManage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbrDictionary"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnManage"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vienbutton"
+                android:padding="5dp"
+                android:text="Manage App"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textAllCaps="false"/>
+        </TableRow>
+    </LinearLayout>
+</RelativeLayout>
